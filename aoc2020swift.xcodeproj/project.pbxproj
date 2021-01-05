@@ -3,11 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D49799925A4B5E3003E7C00 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49799825A4B5E3003E7C00 /* utils.swift */; };
+		6D5006CF25A47E51003909FE /* aocinf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5006CE25A47E51003909FE /* aocinf.swift */; };
+		6D5006D425A48104003909FE /* day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5006D325A48104003909FE /* day1.swift */; };
+		6DE2D5A425A4CC7600989650 /* day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2D5A325A4CC7600989650 /* day2.swift */; };
+		6DE2D5A725A503B100989650 /* day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2D5A625A503B100989650 /* day3.swift */; };
 		6DECC76B2577CF4500C0940E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DECC76A2577CF4500C0940E /* main.swift */; };
+		6DECC7742577D00700C0940E /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 6DECC7732577D00700C0940E /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +29,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6D49799825A4B5E3003E7C00 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		6D5006CE25A47E51003909FE /* aocinf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aocinf.swift; sourceTree = "<group>"; };
+		6D5006D325A48104003909FE /* day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day1.swift; sourceTree = "<group>"; };
+		6D5006D825A48690003909FE /* day1-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "day1-sample.txt"; sourceTree = "<group>"; };
+		6DE2D5A325A4CC7600989650 /* day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day2.swift; sourceTree = "<group>"; };
+		6DE2D5A625A503B100989650 /* day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day3.swift; sourceTree = "<group>"; };
 		6DECC7672577CF4500C0940E /* aoc2020swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = aoc2020swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DECC76A2577CF4500C0940E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,15 +44,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DECC7742577D00700C0940E /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D5006D125A480F3003909FE /* days */ = {
+			isa = PBXGroup;
+			children = (
+				6D5006D325A48104003909FE /* day1.swift */,
+				6DE2D5A325A4CC7600989650 /* day2.swift */,
+				6DE2D5A625A503B100989650 /* day3.swift */,
+			);
+			path = days;
+			sourceTree = "<group>";
+		};
+		6D5006D725A48671003909FE /* input */ = {
+			isa = PBXGroup;
+			children = (
+				6D5006D825A48690003909FE /* day1-sample.txt */,
+			);
+			path = input;
+			sourceTree = "<group>";
+		};
 		6DECC75E2577CF4400C0940E = {
 			isa = PBXGroup;
 			children = (
+				6D5006D725A48671003909FE /* input */,
+				6D5006D125A480F3003909FE /* days */,
 				6DECC7692577CF4500C0940E /* aoc2020swift */,
 				6DECC7682577CF4500C0940E /* Products */,
 			);
@@ -58,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				6DECC76A2577CF4500C0940E /* main.swift */,
+				6D5006CE25A47E51003909FE /* aocinf.swift */,
+				6D49799825A4B5E3003E7C00 /* utils.swift */,
 			);
 			path = aoc2020swift;
 			sourceTree = "<group>";
@@ -78,6 +113,9 @@
 			dependencies = (
 			);
 			name = aoc2020swift;
+			packageProductDependencies = (
+				6DECC7732577D00700C0940E /* ArgumentParser */,
+			);
 			productName = aoc2020swift;
 			productReference = 6DECC7672577CF4500C0940E /* aoc2020swift */;
 			productType = "com.apple.product-type.tool";
@@ -105,6 +143,9 @@
 				Base,
 			);
 			mainGroup = 6DECC75E2577CF4400C0940E;
+			packageReferences = (
+				6DECC7722577D00700C0940E /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 6DECC7682577CF4500C0940E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -119,7 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D5006D425A48104003909FE /* day1.swift in Sources */,
 				6DECC76B2577CF4500C0940E /* main.swift in Sources */,
+				6D5006CF25A47E51003909FE /* aocinf.swift in Sources */,
+				6DE2D5A425A4CC7600989650 /* day2.swift in Sources */,
+				6DE2D5A725A503B100989650 /* day3.swift in Sources */,
+				6D49799925A4B5E3003E7C00 /* utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +331,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6DECC7722577D00700C0940E /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6DECC7732577D00700C0940E /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DECC7722577D00700C0940E /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6DECC75F2577CF4400C0940E /* Project object */;
 }
