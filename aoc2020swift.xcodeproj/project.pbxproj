@@ -35,6 +35,7 @@
 		6D5006D825A48690003909FE /* day1-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "day1-sample.txt"; sourceTree = "<group>"; };
 		6DE2D5A325A4CC7600989650 /* day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day2.swift; sourceTree = "<group>"; };
 		6DE2D5A625A503B100989650 /* day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day3.swift; sourceTree = "<group>"; };
+		6DE2D5A925A51AD900989650 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6DECC7672577CF4500C0940E /* aoc2020swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = aoc2020swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DECC76A2577CF4500C0940E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +73,7 @@
 		6DECC75E2577CF4400C0940E = {
 			isa = PBXGroup;
 			children = (
+				6DE2D5A925A51AD900989650 /* README.md */,
 				6D5006D725A48671003909FE /* input */,
 				6D5006D125A480F3003909FE /* days */,
 				6DECC7692577CF4500C0940E /* aoc2020swift */,
