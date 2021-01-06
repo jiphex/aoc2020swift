@@ -14,9 +14,10 @@ protocol AOCRunnable {
 }
 
 enum AOCError: Error {
-    case PartNotImplemented
-    case ErrorReadingInput
-    case OptionNotProvided
+    case partNotImplemented
+    case errorReadingInput
+    case optionNotProvided
+    case dayNotImplemented
 }
 
 extension AOCRunnable {

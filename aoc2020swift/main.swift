@@ -53,7 +53,7 @@ struct AOC: ParsableCommand {
             }
         } else {
             print("error: no module registered for day \(day)")
-            throw ExitCode.failure
+            throw AOCError.dayNotImplemented
         }
     }
 }
@@ -61,4 +61,5 @@ struct AOC: ParsableCommand {
 AOC.RegisterModule(Day1(), forDay: 1)
 AOC.RegisterModule(Day2(), forDay: 2)
 AOC.RegisterModule(Day3(), forDay: 3)
+AOC.RegisterModule(Day4(), forDay: 4)
 AOC.main()

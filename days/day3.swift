@@ -112,7 +112,7 @@ struct Day3: AOCRunnable {
             case .origin:
                 pos = (0,0)
             default:
-                throw AOCError.PartNotImplemented
+                throw AOCError.partNotImplemented
             }
             var treesHit = 0
             while true {
