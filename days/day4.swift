@@ -23,10 +23,8 @@ struct Day4: AOCRunnable {
         }
         let passports = try batchImportPassports(from: strinput)
         let validCount = passports.filter { $0.isFullyValid }.count
-        return "valid part2 passports found: \(validCount)"
+        return "valid part2 passports found: \(validCount) out of \(passports.count)"
     }
-    
-    
     
     func batchImportPassports(from batchInput: String) throws -> [Passport] {
         var passports: [Passport] = []
@@ -47,6 +45,8 @@ struct Day4: AOCRunnable {
     struct Passport {
         static let fieldSplitChar: Character = ":"
         
+        typealias PassportFields = [FieldType:String]
+
         enum FieldClassification {
             case optional
             case mandatory
@@ -66,11 +66,11 @@ struct Day4: AOCRunnable {
         static var partTwoClassification: [FieldType: (String) -> FieldProblem?] = [
             .birthYear: numberRange(min: 1920, max: 2002),
             .issueYear: numberRange(min: 2010, max: 2020),
-            .expirationYear: numberRange(min: 2020, max: 3030),
+            .expirationYear: numberRange(min: 2020, max: 2030),
             .height: heightValidator(),
             .hairColor: regexValidator(pattern: "^#[0-9a-f]{6}$"),
             .eyeColor: regexValidator(pattern: "^(amb|blu|brn|gry|grn|hzl|oth)$"),
-            .passportID: regexValidator(pattern: "^0*[1-9][0-9]{8}$")
+            .passportID: regexValidator(pattern: "^0*[0-9]{9}$")
         ]
         
         static func regexValidator(pattern: String, options: NSRegularExpression.Options = .init()) -> (String) -> FieldProblem? {
@@ -90,6 +90,9 @@ struct Day4: AOCRunnable {
         
         static func heightValidator() -> (String) -> FieldProblem? {
             return { (input: String) -> FieldProblem? in
+                guard regexValidator(pattern: "^[0-9]+(cm|in)$")(input) == nil else {
+                    return .failsValidation
+                }
                 if input.hasSuffix("cm") {
                     let numpart = input[input.startIndex...input.index(before: input.firstIndex(of: "c")!)]
                     let num = Int(numpart)!
@@ -106,11 +109,14 @@ struct Day4: AOCRunnable {
         
         static func numberRange(min: Int?, max: Int?) -> (String) -> FieldProblem? {
             return {
-                (inn: String) -> FieldProblem? in
-                guard let inyear = Int(inn) else {
+                (input: String) -> FieldProblem? in
+                guard regexValidator(pattern: "^[0-9]+$")(input) == nil else {
+                    return .failsValidation
+                }
+                guard let inyear = Int(input) else {
                     return .unrecognisableData
                 }
-                if min != nil, inyear >= min!, max != nil, inyear <= max! {
+                if (min != nil &&  inyear >= min!) && (max != nil && inyear <= max!) {
                     return nil
                 } else {
                     return .failsValidation
@@ -137,14 +143,21 @@ struct Day4: AOCRunnable {
             case failsValidation
         }
         
-        private(set) var fieldStore: [FieldType: String]
+        
+        
+        private(set) var fieldStore: PassportFields
         
         var hasAllMandatoryFields: Bool {
             // Either there's no problems, or the only ones that exist are missingMandatoryFields
             return problems.isEmpty || problems.filter { _,e in e == .missingMandatoryField || e == .noFields}.isEmpty
         }
         
+        func get(_ field: FieldType) -> String? {
+            return fieldStore[field]
+        }
+        
         var isFullyValid: Bool {
+//            print("\(get(.passportID)) \(problems)")
             return problems.isEmpty
         }
         

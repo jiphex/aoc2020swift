@@ -11,6 +11,7 @@
 		6D5006CF25A47E51003909FE /* aocinf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5006CE25A47E51003909FE /* aocinf.swift */; };
 		6D5006D425A48104003909FE /* day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5006D325A48104003909FE /* day1.swift */; };
 		6D56EAE425A5C8A300432B1C /* day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D56EAE325A5C8A300432B1C /* day4.swift */; };
+		6DDF23F625AA12BD00D01113 /* day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF23F525AA12BD00D01113 /* day5.swift */; };
 		6DE2D5A425A4CC7600989650 /* day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2D5A325A4CC7600989650 /* day2.swift */; };
 		6DE2D5A725A503B100989650 /* day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2D5A625A503B100989650 /* day3.swift */; };
 		6DECC76B2577CF4500C0940E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DECC76A2577CF4500C0940E /* main.swift */; };
@@ -35,6 +36,7 @@
 		6D5006D325A48104003909FE /* day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day1.swift; sourceTree = "<group>"; };
 		6D5006D825A48690003909FE /* day1-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "day1-sample.txt"; sourceTree = "<group>"; };
 		6D56EAE325A5C8A300432B1C /* day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day4.swift; sourceTree = "<group>"; };
+		6DDF23F525AA12BD00D01113 /* day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day5.swift; sourceTree = "<group>"; };
 		6DE2D5A325A4CC7600989650 /* day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day2.swift; sourceTree = "<group>"; };
 		6DE2D5A625A503B100989650 /* day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day3.swift; sourceTree = "<group>"; };
 		6DE2D5A925A51AD900989650 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				6DE2D5A325A4CC7600989650 /* day2.swift */,
 				6DE2D5A625A503B100989650 /* day3.swift */,
 				6D56EAE325A5C8A300432B1C /* day4.swift */,
+				6DDF23F525AA12BD00D01113 /* day5.swift */,
 			);
 			path = days;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DDF23F625AA12BD00D01113 /* day5.swift in Sources */,
 				6D5006D425A48104003909FE /* day1.swift in Sources */,
 				6DECC76B2577CF4500C0940E /* main.swift in Sources */,
 				6D56EAE425A5C8A300432B1C /* day4.swift in Sources */,
