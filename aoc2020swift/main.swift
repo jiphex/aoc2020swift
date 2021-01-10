@@ -46,7 +46,7 @@ struct AOC: ParsableCommand {
             do {
                 let inputFilename = URL(fileURLWithPath: "day\(day)-\(sample ? "sample" : "input").txt", relativeTo: URL(fileURLWithPath: "/Users/jameshannah/usrc/aoc2020swift/input"))
                 let out = try run(mod, part, withInput: inputFilename, withOption: option)
-                print("output\(option != nil ? " with option" : ""): \(out)")
+                print("part \(part) \(sample ? "sample" : "puzzle") output\(option != nil ? " with option" : ""): \(out)")
             } catch {
                 print("error: \(error)")
                 throw ExitCode.failure
@@ -63,4 +63,5 @@ AOC.RegisterModule(Day2(), forDay: 2)
 AOC.RegisterModule(Day3(), forDay: 3)
 AOC.RegisterModule(Day4(), forDay: 4)
 AOC.RegisterModule(Day5(), forDay: 5)
+AOC.RegisterModule(Day6(), forDay: 6)
 AOC.main()

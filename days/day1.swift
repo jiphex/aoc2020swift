@@ -9,7 +9,7 @@ import Foundation
 
 struct Day1: AOCRunnable {
     func RunPart1(input: Data, withOption: String?) -> String {
-        if let instr = GetTrimmedLines(from: input) {
+        if let instr = getTrimmedLines(from: input) {
             let innum = instr.map { istr -> Int  in
                 if let n  = Int(istr) {
                     return n
@@ -25,7 +25,7 @@ struct Day1: AOCRunnable {
     }
     
     func RunPart2(input: Data, withOption: String?) -> String {
-        if let instr = GetTrimmedLines(from: input) {
+        if let instr = getTrimmedLines(from: input) {
             let innum = instr.map { istr -> Int  in
                 if let n  = Int(istr) {
                     return n

@@ -11,7 +11,7 @@ import Foundation
 struct Day2: AOCRunnable {
     
     func RunPart1(input: Data, withOption: String?) throws -> String {
-        if let inl = GetTrimmedLines(from: input){
+        if let inl = getTrimmedLines(from: input){
             let inpp = inl.map { l in
                 PolicyAndPassword(from: l)
             }
@@ -27,7 +27,7 @@ struct Day2: AOCRunnable {
     }
     
     func RunPart2(input: Data, withOption: String?) throws -> String {
-        if let inl = GetTrimmedLines(from: input){
+        if let inl = getTrimmedLines(from: input){
             let inpp = inl.map { l in
                 PolicyAndPassword(from: l)
             }

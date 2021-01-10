@@ -12,11 +12,33 @@
 		6D5006D425A48104003909FE /* day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5006D325A48104003909FE /* day1.swift */; };
 		6D56EAE425A5C8A300432B1C /* day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D56EAE325A5C8A300432B1C /* day4.swift */; };
 		6DDF23F625AA12BD00D01113 /* day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF23F525AA12BD00D01113 /* day5.swift */; };
+		6DDF23F925AC453300D01113 /* day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF23F825AC453300D01113 /* day6.swift */; };
+		6DDF240225AC4B6B00D01113 /* AOC2020SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF240125AC4B6B00D01113 /* AOC2020SwiftTests.swift */; };
+		6DDF240D25AC4C1E00D01113 /* day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5006D325A48104003909FE /* day1.swift */; };
+		6DDF240E25AC4C1E00D01113 /* day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2D5A325A4CC7600989650 /* day2.swift */; };
+		6DDF240F25AC4C1E00D01113 /* day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2D5A625A503B100989650 /* day3.swift */; };
+		6DDF241025AC4C1E00D01113 /* day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D56EAE325A5C8A300432B1C /* day4.swift */; };
+		6DDF241125AC4C1E00D01113 /* day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF23F525AA12BD00D01113 /* day5.swift */; };
+		6DDF241225AC4C1E00D01113 /* day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF23F825AC453300D01113 /* day6.swift */; };
+		6DDF241325AC4C1E00D01113 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DECC76A2577CF4500C0940E /* main.swift */; };
+		6DDF241425AC4C1E00D01113 /* aocinf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5006CE25A47E51003909FE /* aocinf.swift */; };
+		6DDF241525AC4C1E00D01113 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49799825A4B5E3003E7C00 /* utils.swift */; };
+		6DDF241A25AC4C8D00D01113 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 6DDF241925AC4C8D00D01113 /* ArgumentParser */; };
 		6DE2D5A425A4CC7600989650 /* day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2D5A325A4CC7600989650 /* day2.swift */; };
 		6DE2D5A725A503B100989650 /* day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2D5A625A503B100989650 /* day3.swift */; };
 		6DECC76B2577CF4500C0940E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DECC76A2577CF4500C0940E /* main.swift */; };
 		6DECC7742577D00700C0940E /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 6DECC7732577D00700C0940E /* ArgumentParser */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DDF240925AC4C0800D01113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DECC75F2577CF4400C0940E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DECC7662577CF4400C0940E;
+			remoteInfo = aoc2020swift;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6DECC7652577CF4400C0940E /* CopyFiles */ = {
@@ -37,6 +59,10 @@
 		6D5006D825A48690003909FE /* day1-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "day1-sample.txt"; sourceTree = "<group>"; };
 		6D56EAE325A5C8A300432B1C /* day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day4.swift; sourceTree = "<group>"; };
 		6DDF23F525AA12BD00D01113 /* day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day5.swift; sourceTree = "<group>"; };
+		6DDF23F825AC453300D01113 /* day6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day6.swift; sourceTree = "<group>"; };
+		6DDF23FF25AC4B6A00D01113 /* AOC2020SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOC2020SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DDF240125AC4B6B00D01113 /* AOC2020SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOC2020SwiftTests.swift; sourceTree = "<group>"; };
+		6DDF240325AC4B6B00D01113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DE2D5A325A4CC7600989650 /* day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day2.swift; sourceTree = "<group>"; };
 		6DE2D5A625A503B100989650 /* day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day3.swift; sourceTree = "<group>"; };
 		6DE2D5A925A51AD900989650 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -45,6 +71,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6DDF23FC25AC4B6A00D01113 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DDF241A25AC4C8D00D01113 /* ArgumentParser in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6DECC7642577CF4400C0940E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,6 +98,7 @@
 				6DE2D5A625A503B100989650 /* day3.swift */,
 				6D56EAE325A5C8A300432B1C /* day4.swift */,
 				6DDF23F525AA12BD00D01113 /* day5.swift */,
+				6DDF23F825AC453300D01113 /* day6.swift */,
 			);
 			path = days;
 			sourceTree = "<group>";
@@ -76,6 +111,22 @@
 			path = input;
 			sourceTree = "<group>";
 		};
+		6DDF240025AC4B6B00D01113 /* AOC2020SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DDF240125AC4B6B00D01113 /* AOC2020SwiftTests.swift */,
+				6DDF240325AC4B6B00D01113 /* Info.plist */,
+			);
+			path = AOC2020SwiftTests;
+			sourceTree = "<group>";
+		};
+		6DDF241825AC4C8D00D01113 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6DECC75E2577CF4400C0940E = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +134,9 @@
 				6D5006D725A48671003909FE /* input */,
 				6D5006D125A480F3003909FE /* days */,
 				6DECC7692577CF4500C0940E /* aoc2020swift */,
+				6DDF240025AC4B6B00D01113 /* AOC2020SwiftTests */,
 				6DECC7682577CF4500C0940E /* Products */,
+				6DDF241825AC4C8D00D01113 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				6DECC7672577CF4500C0940E /* aoc2020swift */,
+				6DDF23FF25AC4B6A00D01113 /* AOC2020SwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +162,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6DDF23FE25AC4B6A00D01113 /* AOC2020SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DDF240425AC4B6B00D01113 /* Build configuration list for PBXNativeTarget "AOC2020SwiftTests" */;
+			buildPhases = (
+				6DDF23FB25AC4B6A00D01113 /* Sources */,
+				6DDF23FC25AC4B6A00D01113 /* Frameworks */,
+				6DDF23FD25AC4B6A00D01113 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DDF240A25AC4C0800D01113 /* PBXTargetDependency */,
+			);
+			name = AOC2020SwiftTests;
+			packageProductDependencies = (
+				6DDF241925AC4C8D00D01113 /* ArgumentParser */,
+			);
+			productName = AOC2020SwiftTests;
+			productReference = 6DDF23FF25AC4B6A00D01113 /* AOC2020SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6DECC7662577CF4400C0940E /* aoc2020swift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DECC76E2577CF4500C0940E /* Build configuration list for PBXNativeTarget "aoc2020swift" */;
@@ -134,9 +209,12 @@
 		6DECC75F2577CF4400C0940E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					6DDF23FE25AC4B6A00D01113 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					6DECC7662577CF4400C0940E = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -159,11 +237,39 @@
 			projectRoot = "";
 			targets = (
 				6DECC7662577CF4400C0940E /* aoc2020swift */,
+				6DDF23FE25AC4B6A00D01113 /* AOC2020SwiftTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		6DDF23FD25AC4B6A00D01113 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		6DDF23FB25AC4B6A00D01113 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DDF240D25AC4C1E00D01113 /* day1.swift in Sources */,
+				6DDF240E25AC4C1E00D01113 /* day2.swift in Sources */,
+				6DDF240F25AC4C1E00D01113 /* day3.swift in Sources */,
+				6DDF241025AC4C1E00D01113 /* day4.swift in Sources */,
+				6DDF241125AC4C1E00D01113 /* day5.swift in Sources */,
+				6DDF241225AC4C1E00D01113 /* day6.swift in Sources */,
+				6DDF241325AC4C1E00D01113 /* main.swift in Sources */,
+				6DDF241425AC4C1E00D01113 /* aocinf.swift in Sources */,
+				6DDF241525AC4C1E00D01113 /* utils.swift in Sources */,
+				6DDF240225AC4B6B00D01113 /* AOC2020SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6DECC7632577CF4400C0940E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,13 +281,58 @@
 				6D5006CF25A47E51003909FE /* aocinf.swift in Sources */,
 				6DE2D5A425A4CC7600989650 /* day2.swift in Sources */,
 				6DE2D5A725A503B100989650 /* day3.swift in Sources */,
+				6DDF23F925AC453300D01113 /* day6.swift in Sources */,
 				6D49799925A4B5E3003E7C00 /* utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6DDF240A25AC4C0800D01113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DECC7662577CF4400C0940E /* aoc2020swift */;
+			targetProxy = 6DDF240925AC4C0800D01113 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		6DDF240525AC4B6B00D01113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QR9X9U4QUX;
+				INFOPLIST_FILE = AOC2020SwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.jph.AOC2020SwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6DDF240625AC4B6B00D01113 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QR9X9U4QUX;
+				INFOPLIST_FILE = AOC2020SwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.jph.AOC2020SwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6DECC76C2577CF4500C0940E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -324,6 +475,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6DDF240425AC4B6B00D01113 /* Build configuration list for PBXNativeTarget "AOC2020SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DDF240525AC4B6B00D01113 /* Debug */,
+				6DDF240625AC4B6B00D01113 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6DECC7622577CF4400C0940E /* Build configuration list for PBXProject "aoc2020swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -356,6 +516,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6DDF241925AC4C8D00D01113 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DECC7722577D00700C0940E /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
 		6DECC7732577D00700C0940E /* ArgumentParser */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6DECC7722577D00700C0940E /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
