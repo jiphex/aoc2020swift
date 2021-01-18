@@ -23,7 +23,7 @@ struct Day2: AOCRunnable {
             }
             return "part 1: found \(validPasswords) valid passwords"
         }
-        throw AOCError.errorReadingInput
+        throw AOCError.problemReadingInput
     }
     
     func RunPart2(input: Data, withOption: String?) throws -> String {
@@ -39,7 +39,7 @@ struct Day2: AOCRunnable {
             }
             return "part 2: found \(validPasswords) valid passwords"
         }
-        throw AOCError.errorReadingInput
+        throw AOCError.problemReadingInput
     }
     
     struct PolicyAndPassword {

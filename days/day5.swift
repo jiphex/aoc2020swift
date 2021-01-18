@@ -30,7 +30,7 @@ struct Day5: AOCRunnable {
     func RunPart1(input: Data, withOption opt: String?) throws -> String {
         let passes = try getPasses(from: input)
         guard !passes.isEmpty else {
-            throw AOCError.errorReadingInput
+            throw AOCError.problemReadingInput
         }
         return "highest seat ID: \(passes.max {a,b in a.seatID < b.seatID }!)"
     }
@@ -38,7 +38,7 @@ struct Day5: AOCRunnable {
     func RunPart2(input: Data, withOption opt: String?) throws -> String {
         let passes = try getPasses(from: input).sorted()
         guard !passes.isEmpty else {
-            throw AOCError.errorReadingInput
+            throw AOCError.problemReadingInput
         }
         var myseat: BoardingPass?
         var last: BoardingPass = passes.first!
@@ -57,7 +57,7 @@ struct Day5: AOCRunnable {
         if let sdata = String(data: from, encoding: .utf8) {
             return sdata.components(separatedBy: .newlines).map { BoardingPass($0) }.compactMap { $0 }
         }
-        throw AOCError.errorReadingInput
+        throw AOCError.problemReadingInput
     }
     
     struct BoardingPass: CustomStringConvertible,Comparable {

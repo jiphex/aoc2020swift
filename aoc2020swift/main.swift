@@ -21,7 +21,7 @@ enum Part: Int,ExpressibleByArgument,Decodable {
 struct AOC: ParsableCommand {
     
     @Option(name: .shortAndLong, help: "day")
-    var day: Int8 = 1
+    var day: Int = 1
     @Option(name: .shortAndLong, help: "part")
     var part: Part = Part.one
     @Option(name: .shortAndLong, help: "sample")
@@ -29,12 +29,18 @@ struct AOC: ParsableCommand {
     @Option(name: .shortAndLong, help: "puzzle option")
     var option: String?
     
-    static func RegisterModule<T: AOCRunnable>(_ mod: T, forDay day: Int8) {
+    static func RegisterModule<T: AOCRunnable>(_ mod: T, forDay day: Int) {
         let imod = T.init()
         AOC.dayModules[day] = imod
     }
     
-    private static var dayModules: [Int8: AOCRunnable] = [:]
+    static func RegisterModules<T: AOCRunnable>(_ mods: [T]) {
+        for m in mods.enumerated() {
+            AOC.RegisterModule(m.element, forDay: m.offset+1)
+        }
+    }
+    
+    private static var dayModules: [Int: AOCRunnable] = [:]
     
     func run(_ module: AOCRunnable, _ rpart: Part, withInput url: URL, withOption opt: String?) throws -> String {
         let data = try Data(contentsOf: url)
@@ -58,10 +64,14 @@ struct AOC: ParsableCommand {
     }
 }
 
+//let modules: [Int:AOCRunnable] = [Day1(),Day2()].enumerated().reduce(Dictionary<Int,AOCRunnable>()){x,y in x[y.offset]=y.element}
 AOC.RegisterModule(Day1(), forDay: 1)
 AOC.RegisterModule(Day2(), forDay: 2)
 AOC.RegisterModule(Day3(), forDay: 3)
 AOC.RegisterModule(Day4(), forDay: 4)
 AOC.RegisterModule(Day5(), forDay: 5)
 AOC.RegisterModule(Day6(), forDay: 6)
+AOC.RegisterModule(Day7(), forDay: 7)
+AOC.RegisterModule(Day8(), forDay: 8)
+AOC.RegisterModule(Day8(), forDay: 9)
 AOC.main()

@@ -10,7 +10,7 @@ import Foundation
 struct Day4: AOCRunnable {
     func RunPart1(input: Data, withOption opt: String?) throws -> String {
         guard let strinput = String(data: input, encoding: .utf8) else {
-            throw AOCError.errorReadingInput
+            throw AOCError.problemReadingInput
         }
         let passports = try batchImportPassports(from: strinput)
         let validCount = passports.filter { $0.hasAllMandatoryFields }.count
@@ -19,7 +19,7 @@ struct Day4: AOCRunnable {
     
     func RunPart2(input: Data, withOption opt: String?) throws -> String {
         guard let strinput = String(data: input, encoding: .utf8) else {
-            throw AOCError.errorReadingInput
+            throw AOCError.problemReadingInput
         }
         let passports = try batchImportPassports(from: strinput)
         let validCount = passports.filter { $0.isFullyValid }.count

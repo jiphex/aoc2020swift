@@ -6,9 +6,6 @@
 //
 import Foundation
 
-protocol InitableFromString {
-    init(from: String)
-}
 
 func getTrimmedLines(from input: Data) -> [String]? {
     let inStr = String(data: input, encoding: .utf8)
@@ -17,11 +14,16 @@ func getTrimmedLines(from input: Data) -> [String]? {
     }
 }
 
+
+protocol InitableFromString {
+    init(from: String)
+}
+
 func batchCreate<T: InitableFromString>(from batchInput: Data, encoding: String.Encoding = .utf8) throws -> [T] {
     if let stringData = String(data: batchInput, encoding: encoding) {
         return try batchCreate(from: stringData)
     }
-    throw AOCError.errorReadingInput
+    throw AOCError.problemReadingInput
 }
 
 func batchCreate<T: InitableFromString>(from batchInput: String) throws -> [T] {

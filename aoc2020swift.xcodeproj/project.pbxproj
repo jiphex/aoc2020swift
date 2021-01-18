@@ -11,6 +11,12 @@
 		6D5006CF25A47E51003909FE /* aocinf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5006CE25A47E51003909FE /* aocinf.swift */; };
 		6D5006D425A48104003909FE /* day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5006D325A48104003909FE /* day1.swift */; };
 		6D56EAE425A5C8A300432B1C /* day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D56EAE325A5C8A300432B1C /* day4.swift */; };
+		6D613D8025B221DB00E59D45 /* day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D613D7F25B221DB00E59D45 /* day8.swift */; };
+		6D613D8125B221DB00E59D45 /* day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D613D7F25B221DB00E59D45 /* day8.swift */; };
+		6D66905025AC81F400A07719 /* day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D66904F25AC81F400A07719 /* day7.swift */; };
+		6D66905125AC81F400A07719 /* day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D66904F25AC81F400A07719 /* day7.swift */; };
+		6DA7041B25B5C17A00E7045F /* day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA7041A25B5C17A00E7045F /* day9.swift */; };
+		6DA7041C25B5C17A00E7045F /* day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA7041A25B5C17A00E7045F /* day9.swift */; };
 		6DDF23F625AA12BD00D01113 /* day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF23F525AA12BD00D01113 /* day5.swift */; };
 		6DDF23F925AC453300D01113 /* day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF23F825AC453300D01113 /* day6.swift */; };
 		6DDF240225AC4B6B00D01113 /* AOC2020SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF240125AC4B6B00D01113 /* AOC2020SwiftTests.swift */; };
@@ -58,6 +64,9 @@
 		6D5006D325A48104003909FE /* day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day1.swift; sourceTree = "<group>"; };
 		6D5006D825A48690003909FE /* day1-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "day1-sample.txt"; sourceTree = "<group>"; };
 		6D56EAE325A5C8A300432B1C /* day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day4.swift; sourceTree = "<group>"; };
+		6D613D7F25B221DB00E59D45 /* day8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day8.swift; sourceTree = "<group>"; };
+		6D66904F25AC81F400A07719 /* day7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day7.swift; sourceTree = "<group>"; };
+		6DA7041A25B5C17A00E7045F /* day9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day9.swift; sourceTree = "<group>"; };
 		6DDF23F525AA12BD00D01113 /* day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day5.swift; sourceTree = "<group>"; };
 		6DDF23F825AC453300D01113 /* day6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day6.swift; sourceTree = "<group>"; };
 		6DDF23FF25AC4B6A00D01113 /* AOC2020SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOC2020SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +108,9 @@
 				6D56EAE325A5C8A300432B1C /* day4.swift */,
 				6DDF23F525AA12BD00D01113 /* day5.swift */,
 				6DDF23F825AC453300D01113 /* day6.swift */,
+				6D66904F25AC81F400A07719 /* day7.swift */,
+				6D613D7F25B221DB00E59D45 /* day8.swift */,
+				6DA7041A25B5C17A00E7045F /* day9.swift */,
 			);
 			path = days;
 			sourceTree = "<group>";
@@ -260,10 +272,13 @@
 				6DDF240D25AC4C1E00D01113 /* day1.swift in Sources */,
 				6DDF240E25AC4C1E00D01113 /* day2.swift in Sources */,
 				6DDF240F25AC4C1E00D01113 /* day3.swift in Sources */,
+				6D66905125AC81F400A07719 /* day7.swift in Sources */,
 				6DDF241025AC4C1E00D01113 /* day4.swift in Sources */,
 				6DDF241125AC4C1E00D01113 /* day5.swift in Sources */,
 				6DDF241225AC4C1E00D01113 /* day6.swift in Sources */,
+				6D613D8125B221DB00E59D45 /* day8.swift in Sources */,
 				6DDF241325AC4C1E00D01113 /* main.swift in Sources */,
+				6DA7041C25B5C17A00E7045F /* day9.swift in Sources */,
 				6DDF241425AC4C1E00D01113 /* aocinf.swift in Sources */,
 				6DDF241525AC4C1E00D01113 /* utils.swift in Sources */,
 				6DDF240225AC4B6B00D01113 /* AOC2020SwiftTests.swift in Sources */,
@@ -278,10 +293,13 @@
 				6D5006D425A48104003909FE /* day1.swift in Sources */,
 				6DECC76B2577CF4500C0940E /* main.swift in Sources */,
 				6D56EAE425A5C8A300432B1C /* day4.swift in Sources */,
+				6DA7041B25B5C17A00E7045F /* day9.swift in Sources */,
+				6D613D8025B221DB00E59D45 /* day8.swift in Sources */,
 				6D5006CF25A47E51003909FE /* aocinf.swift in Sources */,
 				6DE2D5A425A4CC7600989650 /* day2.swift in Sources */,
 				6DE2D5A725A503B100989650 /* day3.swift in Sources */,
 				6DDF23F925AC453300D01113 /* day6.swift in Sources */,
+				6D66905025AC81F400A07719 /* day7.swift in Sources */,
 				6D49799925A4B5E3003E7C00 /* utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

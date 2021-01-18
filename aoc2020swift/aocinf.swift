@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 protocol AOCRunnable {
     func RunPart1(input: Data, withOption opt: String?) throws -> String
     func RunPart2(input: Data, withOption opt: String?) throws -> String
@@ -15,7 +14,7 @@ protocol AOCRunnable {
 
 enum AOCError: Error {
     case partNotImplemented
-    case errorReadingInput
+    case problemReadingInput
     case optionNotProvided
     case dayNotImplemented
 }
@@ -29,7 +28,6 @@ extension AOCRunnable {
             return try RunPart2(input: data, withOption: opt)
         }
     }
-    
 //    func RunPart2(input: Data) throws -> String {
 //        throw AOCError.PartNotImplemented
 //    }
